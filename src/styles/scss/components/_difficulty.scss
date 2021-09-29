@@ -1,0 +1,39 @@
+.difficulty {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btn {
+        width: 130px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px 0;
+        border-radius: 5px;
+        background-color: $primary;
+        margin-right: 10px;
+        transition: background-color 0.5s;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: #5FA3EC;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .difficulty {
+        flex-direction: column;
+
+        &__btn {
+            margin: 5px 0;
+            width: 100%;
+            display: block;
+        }
+    }
+}

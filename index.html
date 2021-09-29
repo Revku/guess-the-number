@@ -28,16 +28,33 @@
         <div class="header">
             <h2 class="header__title">Guess The Number</h2>
         </div>
-    </div>
+        
+        <div class="difficulty">
+            <button onclick="changeMode('easy')" class="difficulty__btn active" id="difficulty__easy">Łatwy</button>
+            <button onclick="changeMode('medium')" class="difficulty__btn" id="difficulty__medium">Średni</button>
+            <button onclick="changeMode('hard')" class="difficulty__btn" id="difficulty__hard">Trudny</button>
+            <button onclick="changeMode('extrahard')" class="difficulty__btn" id="difficulty__extrahard">Bardzo trudny</button>
+        </div>
 
-    <div class="difficulty">
-        <button class="difficulty__btn">Easy</button>
-        <button class="difficulty__btn">Medium</button>
-        <button class="difficulty__btn">Hard</button>
-        <button class="difficulty__btn">Extra hard</button>
-    </div>
+        <div class="info">
+            <p class="info__text" id="info">Zgadnij liczbę z zakresu 0 - 100</p>
+        </div>
+        
+        <div class="guess">
+            <div class="guess__box">
+                <input type="text" class="guess__input" id="guess__input" placeholder="Twoja liczba">
+                <button onclick="checkNumber()" class="guess__btn">Zgadnij</button>
+            </div>
 
-    <!-- JS Scripts -->
-    <script src="./src/js/index.js"></script>
+            <div class="guess__result" id="result">
+                <div class="guess__info" id="guess__info"></div>
+            </div>
+
+            <button onclick="resetGame()" class="guess__resetbutton" id="guess__resetbutton">Zagraj jeszcze raz</button>
+        </div>
+    </div>
+        
+        <!-- JS Scripts -->
+        <script src="./src/js/index.js"></script>
 </body>
 </html>

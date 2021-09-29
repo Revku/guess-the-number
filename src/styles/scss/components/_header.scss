@@ -1,0 +1,16 @@
+.header {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 650px) {
+    .header {
+        border-radius: 0;
+    }
+}

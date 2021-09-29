@@ -1,0 +1,89 @@
+$active: #2DC350;
+$badAnswer: #EF5947;
+$goodAnswer: #2DC350;
+
+.guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    flex-direction: column;
+
+    &__input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: #D8D8D8;
+        border-radius: 5px;
+        min-width: 300px;
+        text-align: center;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    &__btn {
+        width: 100px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px 0;
+        border-radius: 5px;
+        background-color: $primary;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #5FA3EC;
+        }
+    }
+
+    &__result {
+        padding: 15px;
+        width: 90%;
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 5px;
+        background-color: $badAnswer;
+        color: white;
+        font-size: 14px;
+        display: none;
+    }
+
+    &__resetbutton {
+        margin-top: 20px;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px 0;
+        border-radius: 5px;
+        background-color: $primary;
+        transition: background-color 0.5s;
+        display: none;
+
+        &:hover {
+            background-color: #5FA3EC;
+        }
+    }
+}
+
+.active {
+    background-color: $goodAnswer !important;
+}
+
+@media (max-width: 650px) {
+    .guess {
+
+        &__input {
+            display: block;
+        }
+
+        &__btn {
+            margin-top: 15px;
+        }
+    }
+}
