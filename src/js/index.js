@@ -20,7 +20,7 @@ const modes = {
     'extrahard': {
         'name': 'extrahard',
         'minValue': '0',
-        'maxValue': '1000000',
+        'maxValue': '999999999',
         'info': 'Zgadnij nieznaną liczbę',
     },
 };
