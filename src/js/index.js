@@ -31,9 +31,9 @@ const randomNumber = (min, max) => {
 
 const result = document.getElementById("result");
 const resultinfo = document.getElementById("guess__info");
+let mode = modes.easy;
 let wK2L8SenGY4Cxx = randomNumber(mode.minValue, mode.maxValue);
 
-let mode = modes.easy;
 
 const dif_button1 = document.getElementById('difficulty__easy');
 const dif_button2 = document.getElementById('difficulty__medium');
