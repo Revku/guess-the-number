@@ -31,8 +31,11 @@ const randomNumber = (min, max) => {
 
 const result = document.getElementById("result");
 const resultinfo = document.getElementById("guess__info");
+let qYs8VhojxNrHyn = randomNumber(mode.minValue, mode.maxValue);
+let wfn4qc2DxX7W98 = 'qYs8VhojxNrHyn';
+let wK2L8SenGY4Cxx = eval(wfn4qc2DxX7W98);
+
 let mode = modes.easy;
-let number = randomNumber(mode.minValue, mode.maxValue);
 
 const dif_button1 = document.getElementById('difficulty__easy');
 const dif_button2 = document.getElementById('difficulty__medium');
@@ -67,7 +70,7 @@ const changeMode = (arg) => {
         dif_button4.classList.add('active');
     };
     info.innerText = mode.info;
-    number = randomNumber(mode.minValue, mode.maxValue);
+    wK2L8SenGY4Cxx = randomNumber(mode.minValue, mode.maxValue);
     result.style.display = "none";
 }
 
@@ -81,14 +84,14 @@ const checkNumber = () => {
     const num = input.value;
     result.style.display = "block";
         
-    if (num == number) {
+    if (num == wK2L8SenGY4Cxx) {
         resultinfo.innerHTML = "Brawo! Udało ci się odgadnąć liczbę!";
         result.style.backgroundColor = "#2DC350";
         resetbutton.style.display = "block";
-    } else if (num > number) {
+    } else if (num > wK2L8SenGY4Cxx) {
         resultinfo.innerHTML = "Niestety nie udało się, twoja liczba jest za duża!";
         result.style.backgroundColor = "#EF5947";
-    } else if (num < number) {
+    } else if (num < wK2L8SenGY4Cxx) {
         resultinfo.innerHTML = "Niestety nie udało się, twoja liczba jest za mała!";
         result.style.backgroundColor = "#EF5947";
     }
